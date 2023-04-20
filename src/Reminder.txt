@@ -1,0 +1,3 @@
+Summer / Winter operator difference
+RNG deterministic
+ESN lookback comparison problem
