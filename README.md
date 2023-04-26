@@ -109,8 +109,14 @@
   FC則是相當簡單的線性變換公式
   <ol>
     <li>y = Ax + b</li>
+    <li>Reference：<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear - Pytorch 2.0 documentations</a></li>
   </ol>
   理論上，FC能透過類似係數矩陣(coefficient matrix)的使用，一定程度上學會變數間的相關性。
+</div>
+
+#### GRU-FC
+<div>
+  
 </div>
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
