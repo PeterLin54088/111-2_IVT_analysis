@@ -91,16 +91,25 @@
 ### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
 <div>
 </div>
+
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
 <div>
+  給定一組資料，VAR會透過演算法尋找最佳係數矩陣，使得誤差向量盡可能的小且能滿足特定條件(<a href="https://en.wikipedia.org/wiki/Vector_autoregression">細節在此</a>)。</br>
   一個VAR(p)的公式可寫作</br>
   <ul>
-    <li>y(t) = A_1 * y(t-1) + A_2 * y(t-2) ... +  A_p * y(t-p) + eta</li>
-    <li>訓練組：1979 ~ 2011</li>
-    <li>驗證組：2011 ~ 2013</li>
-    <li>測試組：2013 ~ 2021</li>
+    <li>y(t) = A_1 * y(t-1) + A_2 * y(t-2)、、、 +  A_p * y(t-p) + eta</li>
+    <li>y(t)：自相關向量</li>
+    <li>A_1、A_2、、、A_p：係數矩陣</li>
+    <li>eta：誤差向量</li>
   </ul>
+  VAR可視作線性算子，且物理意義上和一維線性回歸雷同。</br>
+  <ul>
+    <li>一維線性回歸：在一維空間使用最小平方法(Least Square)讓誤差最小，並找出回歸曲線(regression line)</li>
+    <li>VAR：在高維空間中使用OLS(Ordinary Least Square)讓誤差最小，並找出最佳超平面(best-fit hyperplane)</li>
+  </ul>
+  
 </div>
+
 ### 回聲狀態網路 (ESN, Echo State Network)
 <div>
 </div>
