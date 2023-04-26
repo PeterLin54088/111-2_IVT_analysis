@@ -60,7 +60,7 @@
   最後，我使用上述得到的EOF對應的amplitude time series作為我真正實作預報的資料。</br>
 </div>
 
-### 資料分組 (DataLoader) & 資料標準化 (scaler.gz)
+### 資料分組 (DataSet and DataLoader) & 資料標準化 (*scaler.gz)
 <div>
   為了建立ML-based的模式，需要將全部資料分類為三個組別，訓練組(train set)、驗證組(valid set)、測試組(test set)。</br>
   以下先決定各自的資料比例</br>
