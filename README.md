@@ -1,5 +1,7 @@
 # 111-2_IVT_analysis
+
 ## 資料製作
+
 ### 製作原始資料.nc檔
 <div>
   資料來源：ERA5 </br>
@@ -14,6 +16,7 @@
   </ol>
   至此，我會得到一個.nc檔，其維度有"時間"、"氣壓"、"緯度"、"經度"，變數為"U"、"V"、"Q"。</br>
 </div>
+
 ### 製作低頻循環.nc檔
 <div>
   先給出一些假設</br>
@@ -35,12 +38,15 @@
   </ol>
   至此，我會得到另一個.nc檔，其格式同上述.nc檔</br>
 </div>
+
 ## 資料前處理
+
 ### 計算IVT & 濾除低頻循環
 <div>
   真正期望預報的資料類型為IVT(Integrated water Vapor Transport), 所以我必須計算出IVT，我應當得到兩個變數：原始的IVT 和 季節循環的IVT。</br>
   然後，將原始的IVT和季節循環的IVT相減，得到我期望的，主要由短周期波動所組成的filtered IVT。</br>
 </div>
+
 ### 降低維度 (SVD & EOF)
 <div>
   即便我得到了IVT，但這個IVT的維度過大，於是這裡使用SVD(Singular Value Decomposition)將IVT分解為</br>
@@ -53,6 +59,7 @@
   接著，我透過計算各個EOF的解釋方差比(explained variance ratio)，找出最重要(90%)的前數個EOF，在此我使用了前38個EOF。</br>
   最後，我使用上述得到的EOF對應的amplitude time series作為我真正實作預報的資料。</br>
 </div>
+
 ### 資料分組 & 資料標準化
 <div>
   為了建立ML-based的模式，需要將全部資料分類為三個組別，訓練組(train set)、驗證組(valid set)、測試組(test set)。</br>
@@ -80,6 +87,9 @@
 </div>
 
 ## 介紹模式 & 建立模式
+
 ### GRU-FC (Gated Recurrent Unit and Fully Connected layer)
+
 ### VAR (Variational AutoRegressive)
+
 ### ESN (Echo State Network)
