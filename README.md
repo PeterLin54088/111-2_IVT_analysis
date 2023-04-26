@@ -92,39 +92,33 @@
 
 #### GRU
 <div>
-  GRU依序由四條公式組成，各公式都有其名稱及意義
+  GRU依序由四條公式組成，各公式都有其名稱及意義</br>
   <ol>
     <li>Update gate：決定有多少長期記憶被使用。用以決定新的長期記憶。</li>
     <li>Reset gate：決定有多少長期記憶被使用。用以決定當前短期記憶。</li>
     <li>Current hidden state：基於當前的輸入和Reset gate得到的短期記憶</li>
-    <li>Final hidden state：結合短期記憶和Update gate，得到新的長期記憶</li>
+    <li>Final hidden state：結合短期記憶和Update gate得到新的長期記憶</li>
     <li>Reference_1：<a href="https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be">Understanding GRU</a></li>
     <li>Reference_2：<a href="https://clay-atlas.com/blog/2020/06/02/machine-learning-cn-gru-note/">GRU note</a></li>
   </ol>
-  理論上，GRU能透過長期記憶(hidden state)的使用，一定程度上記住變數時間序列的週期特徵，但能記住多長時間的週期變化則和實務上GRU的參數選擇相關。
+  理論上，GRU能透過長期記憶(hidden state)的使用，一定程度上記住變數時間序列的週期特徵，但能記住多長時間的週期變化則和實務上GRU的參數選擇相關。</br>
 </div>
 
 #### FC
 <div>
-  FC則是相當簡單的線性變換公式
+  FC則是相當簡單的線性變換公式</br>
   <ol>
     <li>y = Ax + b</li>
     <li>Reference：<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear - Pytorch 2.0 documentations</a></li>
   </ol>
-  理論上，FC能透過類似係數矩陣(coefficient matrix)的使用，一定程度上學會變數間的相關性。
+  理論上，FC能透過類似係數矩陣(coefficient matrix)的使用，一定程度上學會變數間的相關性。</br>
 </div>
 
 #### GRU-FC
 <div>
-  GRU-FC是將GRU的輸出當作FC的輸入，將FC接在GRU後的預測模型。
-  這樣的想法來自<a href="https://www.sciencedirect.com/science/article/pii/S0045653518324639">這篇論文</a>。
-  參照論文的說法，GRU-FC大意上是將變數所具備的時間、空間結構使用GRU和FC"分別的"去學習，進而使GRU-FC能同時學會變數在時空結構上的相關性。
-  以我的理解來說，IVT實際上具備兩種相關性
-  <ol>
-    <li>時間自相關：(temporal simulator)</li>
-    <li>空間共相關：(spatial combinatory)</li>
-  </ol>
-  
+  GRU-FC是將GRU的輸出當作FC的輸入，將FC接在GRU後的預測模型。</br>
+  這樣的想法來自<a href="https://www.sciencedirect.com/science/article/pii/S0045653518324639">這篇論文</a>。</br>
+  參照論文的說法，GRU-FC大意上是將變數所具備的時間、空間結構使用GRU和FC"分別的"去學習，進而使GRU-FC能同時學會變數在時空結構上的相關性。</br>
 </div>
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
