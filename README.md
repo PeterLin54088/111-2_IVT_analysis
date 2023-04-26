@@ -89,7 +89,18 @@
 ## 介紹模式 & 建立模式
 
 ### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
-
-### 向量自回歸模型 (VAR, Vector AutoRegressions)
-
+<div>
+</div>
+### 向量自回歸模型 (VAR, Vector AutoRegression)
+<div>
+  一個VAR(p)的公式可寫作</br>
+  <ul>
+    <li>y(t) = A_1 * y(t-1) + A_2 * y(t-2) ... +  A_p * y(t-p) + eta</li>
+    <li>訓練組：1979 ~ 2011</li>
+    <li>驗證組：2011 ~ 2013</li>
+    <li>測試組：2013 ~ 2021</li>
+  </ul>
+</div>
 ### 回聲狀態網路 (ESN, Echo State Network)
+<div>
+</div>
