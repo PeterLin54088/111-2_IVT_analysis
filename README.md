@@ -90,13 +90,24 @@
 
 ### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
 <div>
-  GRU依序由四條公式組成，各公式都有其名稱及意義
-  <ol>
-    <li>Update gate：決定有多少長期記憶被保留，用在final hidden state</li>
-    <li>Reset gate：決定有多少長期記憶被保留，用在current hidden state</li>
-    <li>Current hidden state：基於當前的輸入和長期記憶得到的短期記憶</li>
-    <li>Final hidden state：結合短期記憶和過去的長期記憶，得到新的長期記憶</li>
-   </ol>
+  <div>
+    GRU依序由四條公式組成，各公式都有其名稱及意義
+    <ol>
+      <li>Update gate：決定有多少長期記憶被使用，用以生成新的長期記憶</li>
+      <li>Reset gate：決定有多少長期記憶被使用，用以生成短期記憶</li>
+      <li>Current hidden state：基於當前的輸入和長期記憶得到的短期記憶</li>
+      <li>Final hidden state：結合短期記憶和長期記憶，得到新的長期記憶</li>
+    </ol>
+    理論上，GRU能透過長期記憶(hidden state)的使用，一定程度上記住變數時間序列的週期特徵，但能記住多長時間的週期變化則和實務上GRU的參數選擇相關。
+  </div>
+  <div>
+    FC則是相當簡單的線性變換公式
+    <ol>
+      <li>y = Ax + b</li>
+    </ol>
+    理論上，FC能透過類似係數矩陣(coefficient matrix)的使用，一定程度上學會變數間的相關性。
+  </div>
+  
 </div>
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
