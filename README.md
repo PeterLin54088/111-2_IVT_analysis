@@ -90,6 +90,8 @@
 
 ### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
 <div>
+  ![image](https://user-images.githubusercontent.com/55245236/234478142-a4ac4f1c-6c84-4d8e-9d92-13cd703c2ffa.png)
+
 </div>
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
@@ -104,10 +106,9 @@
   </ul>
   VAR可視作線性算子，且物理意義上和一維線性回歸雷同。</br>
   <ul>
-    <li>一維線性回歸：在一維空間使用最小平方法(Least Square)讓誤差最小，並找出回歸曲線(regression line)</li>
+    <li>一維線性回歸：在一維空間使用最小平方法(least square)讓誤差最小，並找出回歸曲線(regression line)</li>
     <li>VAR：在高維空間中使用OLS(Ordinary Least Square)讓誤差最小，並找出最佳超平面(best-fit hyperplane)</li>
   </ul>
-  
 </div>
 
 ### 回聲狀態網路 (ESN, Echo State Network)
