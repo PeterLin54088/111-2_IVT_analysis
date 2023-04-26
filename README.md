@@ -140,4 +140,6 @@
 
 ### 回聲狀態網路 (ESN, Echo State Network)
 <div>
+  ESN是儲層計算(RC, Reservoir Computing)的一個類別，也是循環神經網路(RNN, Recurrent Neural Network)的一種變體。
+  ESN和最簡單的ANN(Artificial Neural Network)結構極其相似，差別只在ESN的hidden layer不是單純的feed-forward，而是可以recurrent的結構
 </div>
