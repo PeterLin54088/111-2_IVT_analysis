@@ -93,8 +93,8 @@
   <div>
     GRU依序由四條公式組成，各公式都有其名稱及意義
     <ol>
-      <li>Update gate：決定有多少長期記憶被使用，用以生成新的長期記憶</li>
-      <li>Reset gate：決定有多少長期記憶被使用，用以生成短期記憶</li>
+      <li>Update gate：決定有多少長期記憶被使用，用以生成新的長期記憶(final hidden state)</li>
+      <li>Reset gate：決定有多少長期記憶被使用，用以生成短期記憶(current hidden state)</li>
       <li>Current hidden state：基於當前的輸入和長期記憶得到的短期記憶</li>
       <li>Final hidden state：結合短期記憶和長期記憶，得到新的長期記憶</li>
       <li>Reference_1：<a href="https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be">Understanding GRU</a></li>
