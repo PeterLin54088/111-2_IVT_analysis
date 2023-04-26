@@ -94,7 +94,7 @@
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
 <div>
-  給定一組資料，VAR會透過演算法尋找最佳係數矩陣，使得誤差向量盡可能的小且能滿足特定條件(<a href="https://en.wikipedia.org/wiki/Vector_autoregression">細節在此</a>)。</br>
+  給定一組資料，VAR會透過演算法尋找最佳的係數矩陣，使得誤差向量盡可能的小且能滿足特定條件(<a href="https://en.wikipedia.org/wiki/Vector_autoregression">VAR Wikipedia</a>)。</br>
   一個VAR(p)的公式可寫作</br>
   <ul>
     <li>y(t) = A_1 * y(t-1) + A_2 * y(t-2)、、、 +  A_p * y(t-p) + eta</li>
