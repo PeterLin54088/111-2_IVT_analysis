@@ -90,7 +90,7 @@
 
 ### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
 <div>
-  ![image](https://user-images.githubusercontent.com/55245236/234478142-a4ac4f1c-6c84-4d8e-9d92-13cd703c2ffa.png)
+  ![image](https://user-images.githubusercontent.com/55245236/234478142-a4ac4f1c-6c84-4d8e-9d92-13cd703c2ffa.png?raw=true)
 
 </div>
 
