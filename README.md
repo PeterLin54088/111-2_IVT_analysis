@@ -97,6 +97,8 @@
       <li>Reset gate：決定有多少長期記憶被使用，用以生成短期記憶</li>
       <li>Current hidden state：基於當前的輸入和長期記憶得到的短期記憶</li>
       <li>Final hidden state：結合短期記憶和長期記憶，得到新的長期記憶</li>
+      <li>Reference_1：<a href="https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be">Understanding GRU</a></li>
+      <li>Reference_2：<a href="https://clay-atlas.com/blog/2020/06/02/machine-learning-cn-gru-note/">GRU note</a></li>
     </ol>
     理論上，GRU能透過長期記憶(hidden state)的使用，一定程度上記住變數時間序列的週期特徵，但能記住多長時間的週期變化則和實務上GRU的參數選擇相關。
   </div>
@@ -107,7 +109,6 @@
     </ol>
     理論上，FC能透過類似係數矩陣(coefficient matrix)的使用，一定程度上學會變數間的相關性。
   </div>
-  
 </div>
 
 ### 向量自回歸模型 (VAR, Vector AutoRegression)
