@@ -80,6 +80,6 @@
 </div>
 
 ## 介紹模式 & 建立模式
-### GRU
-### VAR
-### ESN
+### GRU (Gated Recurrent Unit)
+### VAR (Variational AutoRegressive)
+### ESN (Echo State Network)
