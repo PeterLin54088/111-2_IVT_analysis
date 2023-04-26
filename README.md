@@ -88,8 +88,8 @@
 
 ## 介紹模式 & 建立模式
 
-### GRU-FC (Gated Recurrent Unit and Fully Connected layer)
+### 門控循環單元-全連接層 (GRU-FC, Gated Recurrent Unit and Fully Connected layer)
 
-### VAR (Vector AutoRegressions)
+### 向量自回歸模型 (VAR, Vector AutoRegressions)
 
-### ESN (Echo State Network)
+### 回聲狀態網路 (ESN, Echo State Network)
