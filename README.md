@@ -90,6 +90,6 @@
 
 ### GRU-FC (Gated Recurrent Unit and Fully Connected layer)
 
-### VAR (Variational AutoRegressive)
+### VAR (Vector AutoRegressions)
 
 ### ESN (Echo State Network)
