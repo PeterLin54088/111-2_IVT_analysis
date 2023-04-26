@@ -65,12 +65,27 @@
 
 ### 資料分組 & 資料標準化
 <div>
-  接著將全部資料分為三個組別，訓練組(train set)、驗證組(valid set)、測試組(test set)，並給出各自的資料比例
+  為了建立ML-based的模式，需要將全部資料分類為三個組別，訓練組(train set)、驗證組(valid set)、測試組(test set)。</br>
+  以下先決定各自的資料比例</br>
   <ul>
     <li>全部資料：16/16</li>
     <li>訓練組：12/16</li>
     <li>驗證組：1/16</li>
     <li>測試組：3/16</li>
+  </ul>
+  接著依照年分先後依序切分資料，最後得到各資料組別的大致對應年分</br>
+  <ul>
+    <li>全部資料：1979 ~ 2021</li>
+    <li>訓練組：1979 ~ 2011</li>
+    <li>驗證組：2011 ~ 2013</li>
+    <li>測試組：2013 ~ 2021</li>
+  </ul>
+  因為ML-based的模式對資料的尺度相當敏感，需要在保留資料特徵的情況下，將資料映射到另一個更好的向量空間。</br>
+  為此，我使用了MinMaxScaler，其公式如下</br>
+  <ul>
+    <li>X_std = (X - X.min(axis=0)) / (X.max(axis=0) - X.min(axis=0))</li>
+    <li>X_scaled = X_std * (max - min) + min</li>
+    <li>Reference：<a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html">sklearn.preprocessing.MinMaxScaler</a></li>
   </ul>
 </div>
 
